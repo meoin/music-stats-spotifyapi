@@ -1,0 +1,84 @@
+$main-font: Verdana, sans-serif;
+$spotify-green: #1db954;
+$spotify-black: #121212;
+$spotify-darkgrey: #212121;
+$spotify-grey: #535353;
+$spotify-lightgrey: #b3b3b3;
+$horizontal-padding: 20px;
+$vertical-padding: 10px;
+
+//To use variables: 
+h1 {
+    font-family: $main-font;
+    color: white;
+}
+
+body {
+    background-color: $spotify-darkgrey;
+    color: white;
+    background-image: linear-gradient($spotify-black, $spotify-green);
+}
+
+button {
+    font-family: $main-font;
+    color: white;
+    background-color: $spotify-green;
+    border-radius: 12px;
+    padding: $vertical-padding $horizontal-padding;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+select {
+    padding: $vertical-padding $horizontal-padding;
+    border: none;
+    border-radius: 4px;
+    background-color: $spotify-grey;
+    color: white;
+}
+
+table {
+    max-width: 70%;
+    border-collapse: collapse;
+    float: left;
+}
+
+th, td {
+  border: 2px solid black;
+  padding: 5px 15px 5px 5px;
+  text-align: left;
+  max-width: 220px;
+}
+
+th {
+  background-color: lightblue;
+}
+
+a{
+    color: $spotify-lightgrey;
+}
+
+tr {
+    background-color: $spotify-grey;
+}
+
+tr:nth-child(even) {
+    background-color: $spotify-lightgrey;
+
+    a{
+        color: $spotify-darkgrey;
+    }
+}
+
+div, button {
+    margin: 15px;
+}
+  
+img {
+    border: 2px solid Black;
+    padding: 2px;
+}
+  
+#averages {
+    display: inline;
+}
